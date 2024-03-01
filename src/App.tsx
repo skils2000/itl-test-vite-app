@@ -12,7 +12,7 @@ function App() {
       <Routes>
         <Route path="/*" element={<MainPage />} />
         <Route path="/favorites" element={<Favorites />} />
-        <Route path="/userPosts/:userId" element={<UserPosts />} />
+        <Route path="/userPosts/:userId/:userName" element={<UserPosts />} />
       </Routes>
     </>
   );
