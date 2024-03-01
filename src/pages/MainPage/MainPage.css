@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.paginationBlock{
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}

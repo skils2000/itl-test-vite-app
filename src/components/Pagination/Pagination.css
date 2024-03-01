@@ -1,0 +1,30 @@
+.paginator{
+    height: 36px;
+    
+    display:flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.paginator button {
+    width: 74px;
+
+    padding: 10px 24px 10px 24px;
+    border-radius: 8px;
+    gap: 10px;
+    background: rgba(86, 169, 105, 1);
+    color: rgba(245, 245, 240, 1);
+}    
+
+.paginator button:disabled {
+    background: rgba(81, 77, 77, 1);
+}
+ 
+.paginator .navigation {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+}
