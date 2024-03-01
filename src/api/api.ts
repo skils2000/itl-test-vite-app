@@ -11,4 +11,7 @@ export const APIs = {
   getUserPosts(userId: number) {
     return axios.get<Post[]>(`${baseURL}/posts?userId=${userId}`);
   },
+  getFavorites(){
+    return axios.get<UserInfo[]>(`${baseURL}/users`);
+  }
 };
