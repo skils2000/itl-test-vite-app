@@ -8,7 +8,7 @@ export default function Card({ userInfo }: { userInfo: UserInfo }) {
   return (
     <article
       className="card"
-      onClick={() => navigate(`/userPosts/${userInfo.id}`)}
+      onClick={() => navigate(`/userPosts/${userInfo.id}/${userInfo.name}`)}
     >
       <div className="cardHeaderFont">{userInfo.name}</div>
       <div className="cardContentFont">{userInfo.username}</div>
