@@ -1,0 +1,13 @@
+.header {
+    display: flex;
+    justify-content: right;
+}
+
+.favoriteLink{
+    font-size: 14px;
+    font-weight: 700;
+
+    display: flex;
+    vertical-align: middle;
+    gap: 10px;
+}
