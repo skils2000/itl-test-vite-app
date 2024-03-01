@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { UserInfo } from "../../types/userTypes";
 import { APIs } from "../../api/api";
+import Card from "../../components/Card/Card";
+import "./MainPage.css";
 
 export default function MainPage() {
   const [users, setUsers] = useState<UserInfo[]>([]);
@@ -9,15 +11,21 @@ export default function MainPage() {
     const response = await APIs.getUsers();
     setUsers(response.data);
   }
+
   useEffect(() => {
     getUsers();
   }, []);
 
   return (
     <div>
-      {users.map((user) => {
-        return <article key={user.id}>{user.name}</article>;
-      })}
+      <div className="usersList">
+        {users.map((user) => {
+          return <Card userInfo={user} key={user.id}></Card>;
+        })}
+      </div>
+      {/*
+        Место для пагинации
+      */}
     </div>
   );
 }
