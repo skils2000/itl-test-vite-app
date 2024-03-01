@@ -1,0 +1,40 @@
+.titleBlock {
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.userName{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: -0.003em;
+    text-align: left;
+}
+
+.subTitle{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: -0.003em;
+    text-align: left;
+}
+
+.postsList{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post{
+    background: rgba(46, 43, 43, 1);
+
+    padding: 15px 20px 15px 20px;
+    border-radius: 18px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
