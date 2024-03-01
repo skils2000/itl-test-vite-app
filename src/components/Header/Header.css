@@ -1,6 +1,9 @@
 .header {
     display: flex;
     justify-content: right;
+
+    margin-top: 32px;
+    margin-bottom: 20px;
 }
 
 .favoriteLink{
@@ -8,6 +11,6 @@
     font-weight: 700;
 
     display: flex;
-    vertical-align: middle;
+    align-items: center;
     gap: 10px;
 }
